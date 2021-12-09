@@ -29,11 +29,4 @@ body{
   border: 1px solid black;
   padding: 1%;
 }
-
-#button-previous {
-  background-color: lightpink;
-}
-
-#button-next {
-  background-color: lightgreen;
-}
+ 

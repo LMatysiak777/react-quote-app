@@ -1,4 +1,5 @@
 import React from 'react'
+import FunctionButton from './FunctionButton'
 
 class Quote extends React.Component {
     
@@ -34,8 +35,8 @@ class Quote extends React.Component {
             <cite id="cite-quote">{this.state.currentQuote.quote}</cite>
             <p id="p-author">{this.state.currentQuote.author}</p></div>
             <div id="div-buttons-section">
-            <button className="button" id="button-previous" onClick={this.previousQuote}>Previous Quote</button>
-            <button className="button" id="button-next"onClick={this.fetchQuote}>Next Quote</button></div>
+            <FunctionButton buttonTitle="Previous Quote"id="button-previous" onClick={this.previousQuote}/>
+            <FunctionButton buttonTitle="Next Quote" id="button-next"onClick={this.fetchQuote}/></div>
         </div>
     )
 }}
