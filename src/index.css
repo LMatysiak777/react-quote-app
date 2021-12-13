@@ -4,7 +4,7 @@ body{
   justify-content: center;
 }
 
-#div-quote {
+.div-quote {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,12 +15,9 @@ body{
   border-radius: 20px;
   background-color: lightgray;
 }
+ 
 
-#cite-quote {
-
-}
-
-#p-author {
+.p-author {
   text-align: right;
   font-weight: bold;
 }

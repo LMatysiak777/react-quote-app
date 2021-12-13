@@ -12,7 +12,7 @@ class Quote extends React.Component {
     }
 
     fetchQuote =() => {
-        let newQuote;
+        let newQuote = "";
         fetch("https://gist.githubusercontent.com/natebass/b0a548425a73bdf8ea5c618149fe1fce/raw/f4231cd5961f026264bb6bb3a6c41671b044f1f4/quotes.json")
         .then(response=>response.json())
         .catch(error=>{alert("Error: "+error)})
@@ -30,10 +30,10 @@ class Quote extends React.Component {
 
     render() {
     return (
-        <div id="div-quote">
+        <div className="div-quote">
             <div id="div-quote-section">
-            <cite id="cite-quote">{this.state.currentQuote.quote}</cite>
-            <p id="p-author">{this.state.currentQuote.author}</p></div>
+            <cite className="cite-quote">{this.state.currentQuote.quote}</cite>
+            <p className="p-author">{this.state.currentQuote.author}</p></div>
             <div id="div-buttons-section">
             <FunctionButton buttonTitle="Previous Quote"id="button-previous" onClick={this.previousQuote}/>
             <FunctionButton buttonTitle="Next Quote" id="button-next"onClick={this.fetchQuote}/></div>
